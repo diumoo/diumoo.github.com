@@ -1,0 +1,70 @@
+---
+layout: default
+title: "diumoo / channels"
+subtitle: "所有电台兆赫均来自豆瓣电台"
+description: "从800个来自豆瓣电台的兆赫中选择喜欢的在diumoo中播放"
+---
+{% include JB/setup %}
+
+
+<ul class="collection" id="up">
+    <li class="collectiontitle">Up Trending</li>
+</ul>
+
+<ul class="collection" id="hot">
+    <li class='collectiontitle'>Hot</li>
+</ul>
+
+<script type="text/x-handlebars" data-template-name="channels-template">
+    {% raw %}
+    {{#each channels}}
+    <li>
+    <img  {{bindAttr src="cover"}} />
+    <div class="rightdetail">
+        <a href="#diumoolink" {{bindAttr id="id" }} onclick="openlink(this);" class="channellink" >{{ name }}</a>
+        <span class="count">({{ song_num }}首)</span>
+        <div class="popsong">
+            {{ intro }}
+        </div>
+    </div>
+    </li>
+    {{/each}}
+    <li class="more" {{bindAttr onclick="callback"}} >
+    +
+    </li>
+    {% endraw %}
+</script>
+<script type="text/javascript">
+    function openlink(ts){
+        $('iframe').remove();
+        var iframe = document.createElement('iframe');
+        iframe.src = "diumoo://channel?key=" + ts.id + '|' + ts.text;
+        iframe.width=0;iframe.height=0;
+        document.body.appendChild(iframe);
+        return false;
+    };
+
+function loadChannel(count){
+    $('.more').text('loading');
+    var script = document.createElement('script');
+    script.src = "http://channel.diumoo.net/channels/extra/" + count;
+    document.body.appendChild(script);
+}
+function showChannels(insertID,channels){
+        $(insertID).find('.more').remove();
+        if(channels.length==0){
+            return;
+        }
+        else{
+            channels = channels.splice(0,20);
+        }
+        var channelView = Ember.View.create({
+            'templateName':'channels-template',
+            'channels': channels,
+            'callback': "loadChannel('" + COUNT +  "')",
+            });
+        channelView.appendTo(insertID);
+    }
+
+loadChannel(1);
+</script>

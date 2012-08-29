@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{{ page.title }}</title>
+        {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+        <meta name="author" content="{{ site.author.name }}">
+
+        <link rel="shortcut icon" href="/static/favicon.ico">
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script src="{{ ASSET_PATH }}/libs/handlebars-1.0.0.beta.6.js"></script>
+        <script src="{{ ASSET_PATH }}/libs/ember-1.0.pre.min.js"></script>
+        <style type="text/css" media="screen">
+            body{
+                font-family: 'Helvetica Neue', 'Helvetica','华文黑体',sans-serif;
+                font-weight:100;
+                font-size:1.2em;
+            }
+            #header{
+                text-align:right;
+                font-size:1.6em;margin-bottom:20px;
+            }
+            #base{
+                width:480px;
+                margin: 60px auto 10px;
+            }
+            #footer{
+                margin-top:30px;
+                text-align:center;
+                font-size:smaller;
+            }
+
+            #main{margin:20px 0;overflow:hidden;}
+            .collection{
+                border:1px solid #ddd;
+                padding:10px;
+                width:210px;
+                min-height:480px;
+                float:right;
+                margin:0 2px;
+            }
+            .collectiontitle{
+                border-bottom: 1px solid #ddd;
+                margin-bottom: 5px;
+            }
+            .collection li{
+                list-style:none;
+                padding: 5px 0;
+                overflow:hidden;
+            }
+            .collection img{height:40px;width:40px;}
+            .rightdetail{
+                white-space:nowrap;
+                width:160px;height:40px;float:right;
+                font-size:0.8em;
+            }
+            .rightdetail a{color:#333;text-decoration:none; }
+            .rightdetail a:hover{
+                text-decoration:none;
+                color:#666;
+            }
+            .popsong{font-size:0.8em;color:#999;padding:5px 0;}
+            .count{color:#999;}
+            .more{
+                text-align:center;
+                font-size:2em;
+                color:white;
+                background:#666;
+                cursor:pointer;
+                -webkit-transition:background 0.4s;
+                -moz-transition:background 0.4s;
+                -o-transition:background 0.4s;
+                transition:background 0.4s;
+            }
+            .more:hover{
+                background:#333;
+            }
+            .small{font-size:0.5em;color:#aaa;}
+        </style>
+    </head>
+
+    <body>
+        <div id="base">
+            <div id="header">
+                <img src="{{ ASSET_PATH }}/channelbanner.png" alt="" />
+                <br />
+                {{ page.title }}
+                {% if page.subtitle %}
+                <div class="small">{{ page.subtitle }}</div>
+                {% endif %}
+            </div>
+            <div id="main">
+                {{ content }}
+            </div>
+
+            <div id="footer">
+                diumoo © 2012 | All rights reserved.
+            </div>
+        </div>
+
+
+        {% include JB/analytics %}
+    </body>
+</html>
