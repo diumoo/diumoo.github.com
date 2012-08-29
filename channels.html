@@ -4,7 +4,6 @@ title: "diumoo / channels"
 subtitle: "所有电台兆赫均来自豆瓣电台"
 description: "从800个来自豆瓣电台的兆赫中选择喜欢的在diumoo中播放"
 ---
-{% include JB/setup %}
 
 
 <ul class="collection" id="up">
@@ -16,7 +15,6 @@ description: "从800个来自豆瓣电台的兆赫中选择喜欢的在diumoo中
 </ul>
 
 <script type="text/x-handlebars" data-template-name="channels-template">
-    {% raw %}
     {{#each channels}}
     <li>
     <img  {{bindAttr src="cover"}} />
@@ -32,7 +30,6 @@ description: "从800个来自豆瓣电台的兆赫中选择喜欢的在diumoo中
     <li class="more" {{bindAttr onclick="callback"}} >
     +
     </li>
-    {% endraw %}
 </script>
 <script type="text/javascript">
     function openlink(ts){
