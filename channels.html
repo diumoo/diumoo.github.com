@@ -62,7 +62,7 @@ function showChannels(insertID,channels){
     var channelView = Ember.View.create({
             'templateName':'channels-template',
             'channels': channels,
-            'callback': "loadChannel('" + COUNT +  "')",
+            'callback': "loadChannel('" + (COUNT +1)+  "')",
             });
     channelView.appendTo(insertID);
 }
