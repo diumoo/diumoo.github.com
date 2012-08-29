@@ -46,7 +46,7 @@ description: "从800个来自豆瓣电台的兆赫中选择喜欢的在diumoo中
     };
 
 function loadChannel(count){
-    $('.more').text('loading');
+    $('.more').text('loading').attr('onclick','');
     var script = document.createElement('script');
     script.src = "http://channel.diumoo.net/channels/extra/" + count;
     document.body.appendChild(script);
