@@ -1,9 +1,11 @@
-<div class="page-header">
-  <h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
+<div id="header">
+    <img src="{{ ASSET_PATH }}diumoo/channelbanner.png" alt="" />
+    <br />
+    {{ page.title }}
+    {% if page.subtitle %}
+    <div class="small">{{ page.subtitle }}</div>
+    {% endif %}
 </div>
-
-<div class="row">
-  <div class="span12">
+<div id="main">
     {{ content }}
-  </div>
 </div>

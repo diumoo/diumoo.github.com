@@ -5,9 +5,9 @@
         <title>{{ page.title }}</title>
         {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
         <meta name="author" content="{{ site.author.name }}">
-
-        <link rel="shortcut icon" href="/static/favicon.ico">
-        <link rel="icon" href="/static/favicon_2x.ico">
+        <link rel="apple-touch-icon" href="/static/favicon_2x.ico" type="image/x-icon"/>
+        <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="/static/favicon_2x.ico" type="image/x-icon" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
         <script src="{{ ASSET_PATH }}/libs/handlebars-1.0.0.beta.6.js"></script>
         <script src="{{ ASSET_PATH }}/libs/ember-1.0.pre.min.js"></script>
@@ -17,6 +17,8 @@
                 font-weight:100;
                 font-size:1.2em;
             }
+
+            a{color:#3af}
             #header{
                 text-align:right;
                 font-size:1.6em;margin-bottom:20px;
@@ -77,23 +79,39 @@
                 background:#333;
             }
             .small{font-size:0.5em;color:#aaa;}
+
+            .well{
+
+                background-color:#ff9;
+                overflow:hidden;
+                padding:1em;
+                margin-top:30px;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                -webkit-border-radius:5px;
+                -webkit-box-shadow: inset 0 1px 8px rgba(0,0,0,0.2);
+                -moz-border-radius:5px;
+                -moz-box-shadow: inset 0 1px 8px rgba(0,0,0,0.2);
+                -ms-border-radius:5px;
+                -ms-box-shadow: inset 0 1px 8px rgba(0,0,0,0.2);
+                border-radius:5px;
+                box-shadow: inset 0 1px 8px rgba(0,0,0,0.2);
+            }
+
+            .well-left{
+                width:60%;
+                float:left;
+                font-size:smaller;
+            }
+            .well-right{
+                width:35%;
+                float:right;
+            }
         </style>
     </head>
 
     <body>
         <div id="base">
-            <div id="header">
-                <img src="{{ ASSET_PATH }}/channelbanner.png" alt="" />
-                <br />
-                {{ page.title }}
-                {% if page.subtitle %}
-                <div class="small">{{ page.subtitle }}</div>
-                {% endif %}
-            </div>
-            <div id="main">
-                {{ content }}
-            </div>
-
+            {{ content }}
             <div id="footer">
                 diumoo © 2012 | All rights reserved.
             </div>
