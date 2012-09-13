@@ -6,10 +6,6 @@ description: '安装 diumoo Helper for Firefox 的详细教程'
 
 ---
 
-<style type="text/css">
-    #main img{max-width:480px;height:auto;margin:0 auto;}
-</style>
-
 #Firefox 特别指导
 
 由于diumoo Helper for Firefox 安装比较特殊，故在此特别介绍安装过程。

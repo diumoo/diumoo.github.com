@@ -7,7 +7,6 @@ description: "diumoo 使用说明"
 {% include JB/setup %}
 <style type="text/css">
 p{font-size:0.95em;color:#333;}
-#main img{max-width:480px;height:auto;margin:0 auto;}
 code{border:solid 1px #ccc;background:#eee;}
 </style>
 

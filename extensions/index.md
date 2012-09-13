@@ -14,6 +14,8 @@ diumoo Helper 用于配合 diumoo 实现播放艺术家歌曲和电影原声的�
 若 diumoo 已经在运行中，也会自动切换到对应歌曲。
 
 ![diumoo link](/static/usage/play_soundtrack_and_artist.png)
+![diumoo link](/static/usage/screen1.png)
+![diumoo link](/static/usage/screen2.png)
 
 ## 安装
 
@@ -39,7 +41,7 @@ diumoo Helper 目前支持的浏览器为 Safari、Chrome 和 Firefox，请针�
 </h3>
 Chrome 浏览器适用的 diumoo Helper 通过 Chrome 商店免费分发。
 如果您使用的是 Chrome 请前往
-<a href="">这里</a>
+<a href="https://chrome.google.com/webstore/detail/bhcipoegncngbamefblmbehlppibdgfe">这里</a>
 下载安装。
 </div>
 <div>
@@ -47,7 +49,7 @@ Chrome 浏览器适用的 diumoo Helper 通过 Chrome 商店免费分发。
 	<img src="/static/extensions/safari.png" alt="safari" />
 </h3>
 Safari 浏览器可以直接安装插件，请直接点击
-<a href="https://github.com/downloads/diumoo/diumoohelper/diumoohelper20120909.safariext://github.com/downloads/diumoo/diumoohelper/diumoohelper20120909.safariextz">这里</a>
+<a href="https://github.com/downloads/diumoo/diumoohelper/">这里</a>
 下载安装。
 </div>
 <div>
