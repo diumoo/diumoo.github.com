@@ -5,6 +5,10 @@ layout: default
 
 # 下载 diumoo Helper
 
+下载时请认准您使用的浏览器。Chrome 浏览器请访问 
+[应用商店](http://chrome.google.com/webstore/detail/bhcipoegncngbamefblmbehlppibdgfe)
+安装插件。
+
 ## Safari
 [diumoo Helper 2012-09-14](https://github.com/downloads/diumoo/diumoohelper/diumoohelper20120914.safariextz)
 

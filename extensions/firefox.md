@@ -23,9 +23,7 @@ GreaseMonkey 之后，重启 Firefox 就可以看到它的欢迎页面了。
 ## 安装 diumoo Helper for Firefox
 
 diumoo Helper for Firefox 即以 User Script 的形式托管在 [userscript.org](http://userscript.org)
-上，安装过 GreaseMonkey 后，您可以直接点击 [这里](http://userscripts.org/scripts/source/142009.user.js)
-安装插件。为了获取最新的插件，我们建议您访问此插件的 [托管页面](http://userscripts.org/scripts/show/142009)。
-然后点击右上角的 Install 链接安装此 User Script。
+上，安装过 GreaseMonkey 后，您可以访问 [这里](/extensions/downloads.html) 下载插件。
 
 点击安装链接后将会弹出提示窗口，请选择“安装”:
 
