@@ -1,15 +1,15 @@
 ---
 layout: page
-title: "diumoo / Helper"
+title: "diumoo  helper"
 subtitle: "豆瓣电台收听伴侣"
-description: "diumoo Link 浏览器插件用于浏览豆瓣的同时，在diumoo中播放音乐人或者电影原声，而无需转向带有 Flash 的豆瓣电台网页版。"
+description: "diumoo helper 浏览器插件用于浏览豆瓣的同时，在diumoo中播放音乐人或者电影原声，而无需转向带有 Flash 的豆瓣电台网页版。"
 ---
 {% include JB/setup %}
 
 
 ## 简介
 
-diumoo Helper 用于配合 diumoo 实现播放艺术家歌曲和电影原声的功能。
+diumoo helper 用于配合 diumoo 实现播放艺术家歌曲和电影原声的功能。
 您可以在浏览豆瓣音乐页面的时候，得到如下图所示快速启动 diumoo 播放的连接，
 若 diumoo 已经在运行中，也会自动切换到对应歌曲。
 
@@ -19,7 +19,7 @@ diumoo Helper 用于配合 diumoo 实现播放艺术家歌曲和电影原声的�
 
 ## 安装
 
-diumoo Helper 目前支持的浏览器为 Safari、Chrome 和 Firefox，请针对您使用的
+diumoo helper 目前支持的浏览器为 Safari、Chrome 和 Firefox，请针对您使用的
 浏览器分别安装此插件。插件安装完毕即可在浏览豆瓣音乐页面的时候显示对应的启动
 链接。
 
@@ -39,7 +39,7 @@ diumoo Helper 目前支持的浏览器为 Safari、Chrome 和 Firefox，请针�
 <h3>
 	<img src="/static/extensions/chrome.png" alt="Chrome" />
 </h3>
-Chrome 浏览器适用的 diumoo Helper 通过 Chrome 商店免费分发。
+Chrome 浏览器适用的 diumoo helper 通过 Chrome 商店免费分发。
 如果您使用的是 Chrome 请前往
 <a href="https://chrome.google.com/webstore/detail/bhcipoegncngbamefblmbehlppibdgfe">Chrome 应用商店</a>
 下载安装。
@@ -56,10 +56,10 @@ Safari 浏览器可以直接安装插件，请直接点击
 <h3>
 	<img src="/static/extensions/firefox.png" alt="firefox" />
 </h3>
-Firefox 版本的插件采用外挂脚本的方式使用，您需要先安装
+Firefox 版本的插件采用userscript的方式，您需要先安装
 <a href="https://addons.mozilla.org/firefox/addon/748">GreaseMonkey</a> 插件。
 此后，请访问
-<a href="/extensions/downloads.html">这个链接</a> 安装 diumoo Helper。
+<a href="/extensions/downloads.html">这个链接</a> 安装 diumoo helper。
 <br />
 <br />
 查看更详细的
