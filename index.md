@@ -36,13 +36,4 @@ description: "diumoo 是一个专门为 OSX 开发的豆瓣电台客户端，除
 7. Retina Display 支持
 8. 歌曲缓冲
 
-**Bug Shooting**
-
-lite 版本发现一个小bug，更改过自定义快捷键之后，重启应用会失效。这个 bug 
-可以通过在终端中执行 
-
-`defaults write com.diumoo.diumoo-lite shortcutDidRegistered 1` 
-
-命令解决。此 Bug 将不会出现在正式版中。
-
 噗，还有一些新功能，不过悬念还是留给 Mac App Store 版本（仍在审核中 TAT ）比较好
