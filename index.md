@@ -37,3 +37,5 @@ description: "diumoo 是一个专门为 OSX 开发的豆瓣电台客户端，除
 8. 歌曲缓冲
 
 噗，还有一些新功能，不过悬念还是留给 Mac App Store 版本（仍在审核中 TAT ）比较好
+
+反馈 Bug 和 Feature Request 可以来 [这里](/report)
