@@ -24,7 +24,7 @@ description: "diumoo 是一个专门为 OSX 开发的豆瓣电台客户端，除
 
 **小惊喜，diumoo lite 现在发布~**
 
-猛击 [这里](https://github.com/downloads/diumoo/diumoo.github.com/diumoo_lite.zip) 下载!
+猛击 [这里](https://github.com/downloads/) 下载!
 
 新版本的改善
 
