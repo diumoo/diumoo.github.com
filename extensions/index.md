@@ -69,7 +69,7 @@ Firefox 版本的插件采用userscript的方式，您需要先安装
 
 <div class="well">
     <div class="well-left">
-        <p>本浏览器插件需配合 the new diumoo 使用。原 1.0 Preview 版本和 0.9 版本均不支持此功能。</p>
+        <p>本浏览器插件需配合 MAS 版 diumoo 使用。原 1.0 Preview 版本和 0.9 版本和 lite 版均不支持此功能。</p>
         <p>请确认您从 Mac App Store 中正确下载安装了 diumoo 。</p>
     </div>
     <div class="well-right">

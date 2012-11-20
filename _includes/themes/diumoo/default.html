@@ -96,41 +96,65 @@
             }
 
             .well-left{
-                width:60%;
+                width:50%;
                 float:left;
                 font-size:smaller;
             }
             .well-right{
-                width:35%;
+                width:45%;
                 float:right;
             }
             .addthis_toolbox{right:10px;top:100px;}
-        </style>
-    </head>
 
-    <body>
+            #top{
+                font-size:small;
+                background:#eee;
+                border:1px solid #ccc;
+                overflow:hidden;
+                padding:10px;
+            }
+            #top p,h2{margin:5px 0;}
+            #top .small{font-size:1em;}
+            #left{float:left;width:30%;margin-right:20px;}
+            #right{float:right;width:65%;}
+            #version{text-align:center;font-weight:bold;}
+            #version span{
+                color:white;background:#69f;
+                padding:5px;
+                -webkit-border-radius:5px;
+                -moz-border-radius:5px;
+                -ms-border-radius:5px;
+                -o-border-radius:5px;
+                border-radius:5px;
+            }
+            #nav{list-style:none;padding:5px 0;}
+            #nav a{color:black;text-decoration:underline;}
+            </style>
+        </head>
 
-        <!-- AddThis Button BEGIN -->
-        <div class="addthis_toolbox addthis_floating_style addthis_32x32_style" style="left:50px;top:50px;">
-            <a class="addthis_button_preferred_1"></a>
-            <a class="addthis_button_preferred_2"></a>
-            <a class="addthis_button_preferred_3"></a>
-            <a class="addthis_button_preferred_4"></a>
-            <a class="addthis_button_preferred_5"></a>
-            <a class="addthis_button_preferred_6"></a>
-            <a class="addthis_button_preferred_7"></a>
-        </div>
-        <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-        <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5078289a0d53a1a6"></script>
-        <!-- AddThis Button END -->
-        <div id="base">
-            {{ content }}
-            <div id="footer">
+        <body>
 
-                diumoo © 2012 | All rights reserved.
+            <!-- AddThis Button BEGIN -->
+            <div class="addthis_toolbox addthis_floating_style addthis_32x32_style" style="left:50px;top:50px;">
+                <a class="addthis_button_preferred_1"></a>
+                <a class="addthis_button_preferred_2"></a>
+                <a class="addthis_button_preferred_3"></a>
+                <a class="addthis_button_preferred_4"></a>
+                <a class="addthis_button_preferred_5"></a>
+                <a class="addthis_button_preferred_6"></a>
+                <a class="addthis_button_preferred_7"></a>
             </div>
-        </div>
+            <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+            <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5078289a0d53a1a6"></script>
+            <!-- AddThis Button END -->
+            <div id="base">
+                {{ content }}
+                <div id="footer">
 
-        {% include JB/analytics %}
-    </body>
-</html>
+                    diumoo © 2012 | All rights reserved.
+                </div>
+            </div>
+
+            {% include JB/analytics %}
+        </body>
+    </html>
