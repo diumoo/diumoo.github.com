@@ -14,31 +14,24 @@ description: "从800个来自豆瓣电台的兆赫中选择喜欢的在diumoo中
     <li class='collectiontitle'>Hot</li>
 </ul>
 
-<div style="display:none">
-    {% raw %}
-    <script type="text/x-handlebars" data-template-name="channels-template">
-        {{#each channels}}
-        <li>
-        <img  {{bindAttr src="cover"}} />
-        <div class="rightdetail">
-            <a href="#diumoolink" {{bindAttr id="id" }} onclick="openlink(this);" class="channellink" >{{ name }}</a>
-            <span class="count">({{ song_num }}首)</span>
-            <div class="popsong">
-                {{ intro }}
-            </div>
+{% raw %}
+<script type="text/x-handlebars" id="channels-template">
+    <li>
+    <img  src="#cover#" />
+    <div class="rightdetail">
+        <a href="#diumoolink" id="#id#" onclick="openlink(this);" class="channellink" >
+            #name#
+        </a>
+        <span class="count">(#song_num#首)</span>
+        <div class="popsong">
+            #intro#
         </div>
-        </li>
-        {{/each}}
-        <li class="more" {{bindAttr onclick="callback"}} >
-        +
-        </li>
-    </script>
-    {% endraw %}
-</div>
+    </div>
+    </li>
+</script>
+{% endraw %}
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script src="/static/libs/handlebars-1.0.0.beta.6.js"></script>
-<script src="/static/libs/ember-1.0.0-pre.2.min.js"></script>
 <script type="text/javascript">
     function openlink(ts){
         $('iframe').remove();
@@ -55,20 +48,23 @@ function loadChannel(count){
     script.src = "http://channel.diumoo.net/channels/extra/" + count;
     document.body.appendChild(script);
 }
+
+KEYS= ['name','cover','intro','id','song_num'];
+
 function showChannels(insertID,channels){
-    $(insertID).find('.more').remove();
-    if(channels.length==0){
-        return;
+    $(insertID).children('.more').remove();
+    var template = $('#channels-template').text();
+    for(var i in channels){
+        var channel = channels[i];
+        var li = template;
+        for(var j in KEYS){
+            var key = KEYS[j];
+            li = li.replace('#'+key+'#',channel[key]);
+        }
+        console.log(li);
+        $(insertID).append(li);
     }
-    else{
-        channels = channels.splice(0,20);
-    }
-    var channelView = Ember.View.create({
-            'templateName':'channels-template',
-            'channels': channels,
-            'callback': "loadChannel('" + (COUNT +1)+  "')",
-            });
-    channelView.appendTo(insertID);
+    $(insertID).append("<li class='more' onclick='loadChannel(" + (COUNT+1) + ")'>+</li>");
 }
 </script>
 <script type="text/javascript" src="http://channel.diumoo.net/channels/extra/1"></script>
