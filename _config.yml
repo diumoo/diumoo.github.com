@@ -26,7 +26,10 @@ author :
 # Else if you are pushing to username.github.com, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://username.github.com
+production_url : http://diumoo.github.com
+mas_url : https://itunes.apple.com/us/app/diumoo/id562734497
+download_url : http://diumoo.xiuxiu.de/static/app/diumoo.zip
+donate_url : http://me.alipay.com/antsz
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #

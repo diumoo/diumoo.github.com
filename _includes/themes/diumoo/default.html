@@ -106,15 +106,15 @@
             }
             .addthis_toolbox{right:10px;top:100px;}
 
-            #top{
+            .top{
                 font-size:small;
                 background:#eee;
                 border:1px solid #ccc;
                 overflow:hidden;
                 padding:10px;
             }
-            #top p,h2{margin:5px 0;}
-            #top .small{font-size:1em;}
+            .top p,h2{margin:5px 0;}
+            .top .small{font-size:1em;}
             #left{float:left;width:30%;margin-right:20px;}
             #right{float:right;width:65%;}
             #version{text-align:center;font-weight:bold;}
@@ -129,6 +129,13 @@
             }
             .nav{list-style:none;padding:5px 0;}
             .nav a{color:black;text-decoration:underline;}
+            .donate{
+                border:solid 4px #69f;
+                background:#fff;
+                padding:4px;
+                font-size:1.2em;
+                margin:3px 0;
+            }
             </style>
         </head>
 
@@ -150,6 +157,10 @@
             <div id="base">
                 {{ content }}
                 <div id="footer">
+                    <div class="donate">
+                        <p>如果您对 diumoo 感到满意，请通过捐助支持开发</p>
+                        <a href='http://me.alipay.com/antsz'> <img src='https://img.alipay.com/sys/personalprod/style/mc/btn-index.png' /> </a>
+                    </div>
 
                     diumoo © 2012 | All rights reserved.
                 </div>
