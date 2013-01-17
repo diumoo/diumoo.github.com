@@ -176,6 +176,16 @@ Firefox 用户请选择偏好设置，选择“应用程序”选项卡，在选
 另外，橘红色的按键是一个特殊的组合键，用来直接显示 diumoo 的主界面，省去了移动鼠标的麻烦，
 对应的按键为 ``Command + Option + /``。
 
+<a name="doubanfmpro"></a>
+### 豆瓣FM PRO
+
+__New IN Version 1.2__
+
+豆瓣FM PRO 是豆瓣最新推出的收费收听音乐的服务，提供更高质量的收听品质，如果您购买
+了豆瓣FM PRO服务，您就可以在偏好设置中选择播放音质，如下图所示：
+
+![豆瓣FM PRO](/static/usage/doubanfmpro.png)
+
 ## 其他
 
 您可以在 diumoo 主菜单的帮助菜单下找到显示此使用说明的菜单项。
