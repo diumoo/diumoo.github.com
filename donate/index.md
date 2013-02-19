@@ -44,3 +44,4 @@ description: "diumoo donators"
 * 李琦
 * 俞越锋
 * 丁琛
+* 陈军
