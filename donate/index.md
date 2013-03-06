@@ -47,3 +47,5 @@ description: "diumoo donators"
 * 陈军
 * 姚坤杰
 * 陈涛经
+* 赵勤忠
+* 陈通朋
