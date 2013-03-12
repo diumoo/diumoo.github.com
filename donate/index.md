@@ -32,7 +32,7 @@ description: "diumoo donators"
 * 陈涛
 * 毕旋
 * 崔月梅
-* 李侃
+* 李侃 (2次)
 * 任乐
 * 熊一梁
 * 方大江
