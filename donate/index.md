@@ -49,3 +49,6 @@ description: "diumoo donators"
 * 陈涛经
 * 赵勤忠
 * 陈通朋
+* 王云涛
+* 卢雪
+* 刘立经
