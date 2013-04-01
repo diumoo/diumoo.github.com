@@ -51,3 +51,6 @@ description: "diumoo donators"
 * 陈通朋
 * 丁建慧
 * 张屾
+* 王云涛
+* 卢雪
+* 刘立经
