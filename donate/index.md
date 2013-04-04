@@ -54,3 +54,4 @@ description: "diumoo donators"
 * 王云涛
 * 卢雪
 * 刘立经
+* Yuyang Hei (Paypal)
