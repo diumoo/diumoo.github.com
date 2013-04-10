@@ -56,4 +56,4 @@ description: "diumoo donators"
 * 刘立经
 * Yuyang Hei (Paypal)
 * 朱玺
-* Yu Weifu
+* Yu Weifu (PayPal)
