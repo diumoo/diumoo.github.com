@@ -59,3 +59,6 @@ description: "diumoo donators"
 * Yu Weifu (PayPal)
 * 胡雅琴
 * 龚奕
+* 刘森辕
+* 张一帆
+* 张庭经
